@@ -9,64 +9,77 @@
 </head>
 <body>
     <main>
-        <head>
-            <img src="" alt="">
-            <h1></h1>
-        </head>
+        <div class="navbar">
+            <img src="images/OIP.jfif" width="30px" alt="">
+            <h1>Zonal Advanced Space Technology Application Laboratory</h1>
+        </div>
         <section id="fields">
-            <h2>Leave Application Form</h2>
+            <h2 class="heading">Leave Application Form</h2>
             <form action="" method="post">
                 <label for="name">Name:</label>
-                <input type="text" id="name" name="user_name" placeholder="Enter Your Name..."/><br>
+                <input type="text" id="name" name="user_name" required placeholder="Enter Your Name..."/><br>
 
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="E-mail"><br>
+                <input type="email" name="email" required placeholder="Enter Your email..." id="E-mail"><br>
                 
-                <!--supposed to be a dropdown menu-->
-                <label for="rank">Rank:</label><br>
                 
-                <label for="Date">Date of Assumption:</label>
+                <label for="Date">Start Date:</label>
+                <input type="date" name="Date" id="date"><br>
+
+                <label for="Date">End Date:</label>
                 <input type="date" name="Date" id="date"><br>
 
                 <!--supposed to be a dropdown menu-->
-                <label for="Leave-type">Type of Leave:</label><br>
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">Select Leave type</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li>Annual- 30 days</li>
+                        <li>Casual- 5 days</li>
+                        <li>Maternity- 3 months</li>
+                    </ul>
+                </div>
 
-                <!--supposed to be a dropdown menu-->
-                <label for="dept">Department:</label><br>
-
-                <label for="Posting">Station/Posting:</label>
-                <input type="text" name="posting" id="posting">
                 <div class="confirmation">
 
-                    <label for="sign">Signature:</label>
+                    <label for="sign">Sign:</label>
                     <input type="text" name="Sign" id="">
 
                     <label for="date">Date:</label>
                     <input type="date" name="" id="">
                 </div>
             </form>
+            <button class="btn" type="submit">Submit</button>
         </section>
-
+<!--
         <div class="HOD">
-            <h2>Head of Department</h2><br>
-            <label for="name">Name:</label>
-            <input type="text" name="name" id="">
+            <h2 class="heading">For Official Use</h2><br>
+
+            <label for="approved">Approved</label>
+            <input type="checkbox" name="approved" id="">
+
+            <label for="approved">Rejected</label>
+            <input type="checkbox" name="rejected" id=""><br>
 
             <div class="confirmation">
 
-                <label for="sign">Signature:</label>
+                <label for="sign">Signed By</label>
                 <input type="text" name="Sign" id="">
 
                 <label for="date">Date:</label>
                 <input type="date" name="" id="">
             </div>
-        </div>
+        </div>-->
 
-        <i class="note">Rendering of false information by staff would be regarded as serious misconduct and will be punished appropriately.</i>
+        <i class="note">Note:Rendering of false information by staff would be regarded as serious misconduct and will be punished appropriately.</i>
     </main>
 
     <footer>
-        <p>©Copyright ZASTAL 2023</p>
+        <p>©Copyright <img src="images/OIP.jfif" width="20px" alt=""> ZASTAL 2023 </p>
     </footer>
+
+    <script src="text.js"></script>
 </body>
 </html>
