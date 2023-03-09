@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZASTAL-Leave Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div class="navbar">
+            <img src="images/Logo.jpg" width="35px" alt="">
+            <h1>Zonal Advanced Space Technology Application Laboratory(ZASTAL)</h1>
+        </div>
+        <section id="fields">
+            <h2 class="heading">Leave Application Form</h2>
+            <form action="https://formsubmit.co/rbbirma@gmail.com" method="POST" >
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="user_name" required placeholder="Enter Your Name..."/><br>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required placeholder="Enter Your email..." id="E-mail"><br>
+                
+                
+                <label for="Date">Start Date:</label>
+                <input type="date" name="Date" id="date"><br>
+
+                <label for="Date">End Date:</label>
+                <input type="date" name="Date" id="date"><br>
+
+                <!--supposed to be a dropdown menu-->
+                <div class="dropdown">
+                    <div class="select">
+                        <span class="selected">Select Leave type</span>
+                        <div class="caret"></div>
+                    </div>
+                    <ul class="menu">
+                        <li>Annual- 30 days</li>
+                        <li>Casual- 5 days</li>
+                        <li>Maternity- 3 months</li>
+                    </ul>
+                </div>
+
+                <div class="confirmation">
+
+                    <label for="sign">Sign:</label>
+                    <input type="text" name="Sign" id="">
+
+                    <label for="date">Date:</label>
+                    <input type="date" name="" id="">
+                </div>
+                <button class="btn" type="submit">Submit</button>
+            </form>
+            
+        </section>
+<!--
+        <div class="HOD">
+            <h2 class="heading">For Official Use</h2><br>
+
+            <label for="approved">Approved</label>
+            <input type="checkbox" name="approved" id="">
+
+            <label for="approved">Rejected</label>
+            <input type="checkbox" name="rejected" id=""><br>
+
+            <div class="confirmation">
+
+                <label for="sign">Signed By</label>
+                <input type="text" name="Sign" id="">
+
+                <label for="date">Date:</label>
+                <input type="date" name="" id="">
+            </div>
+        </div>-->
+
+        <i class="note">Note:Rendering of false information by staff would be regarded as serious misconduct and will be punished appropriately.</i>
+    </main>
+
+    <footer>
+        <p>©Copyright <img src="images/OIP.jfif" width="20px" alt=""> ZASTAL 2023 </p>
+    </footer>
+
+    <script src="text.js"></script>
+</body>
+</html>
